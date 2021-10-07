@@ -6,13 +6,12 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Магазин Device</h1>
       <img class="logo" src="" alt="Логотип Магазина &quot;Device&quot;">
       <nav class="navigation">
         <nav class="navigation-top">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <input type="text" placeholder="Поиск по сайту">
+              <input type="search" placeholder="Поиск по сайту">
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Войти</a>
@@ -70,6 +69,7 @@
       </nav>
     </header>
     <main class="main-index">
+      <h1 class="visually-hidden">Магазин Device</h1>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <section class="slider-slide" id="slide1"> <!-- Слайдер пока только один разметил для экономии времени -->
@@ -78,14 +78,14 @@
           </span>
           <img class="slider-slide-image" src="" alt="Квадракоптер с лазером, пыщь">
           <button class="slider-arrow slider-arrow-left">
-            <span class="slider-arrow-icon"></div>
+            <span class="slider-arrow-icon"></span>
           </button>
           <button class="slider-arrow slider-arrow-right">
-            <span class="slider-arrow-icon"></div>
+            <span class="slider-arrow-icon"></span>
           </button>
-          <h2 class="slider-title">
+          <h3 class="slider-title">
             Порхает как бабочка, жалит как пчела!
-          </h2>
+          </h3>
           <p class="slider-product-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
@@ -129,7 +129,7 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="main-product-category-list">
           <li>
-            <a href="#" class="main-product-category-link">
+            <a href="#" class="main-product-category-link"> <!-- Иконки декоративные, добавлять планирую через background-image для псевдоэлемента -->
               Виртуальная реальность
             </a>
           </li>
@@ -170,7 +170,7 @@
 
         <!-- Tab content-->
         <div id="delivery" class="option-tab-item-content">
-          <h2>Доставка</h2>
+          <h3>Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
@@ -179,7 +179,7 @@
           <div class="delivery-option-tab-image"></div>
         </div>
         <div id="warranty" class="option-tab-item-content">
-          <h2>Гарантия</h2>
+          <h3>Гарантия</h3>
           <p>
             Если из-за возгорания купленного у нас товара у вас
             сгорит дом — не переживайте, мы выдадим вам новый.
@@ -188,7 +188,7 @@
           <div class="warranty-option-tab-image"></div>
         </div>
         <div id="financing" class="option-tab-item-content">
-          <h2>Кредит</h2>
+          <h3>Кредит</h3>
           <p>
             Залезть в долговую яму стало проще! Кредитные
             консультанты подберут для вас наиболее выгодные
@@ -211,7 +211,6 @@
         </div>
       </section>
       <section class="about-us">
-        <hr>
         <h2 class="about-us-title">
           О нас
         </h2>
@@ -237,7 +236,6 @@
         </a>
       </section>
       <section class="contacts">
-        <hr>
         <h2 class="contacts-title">
           Контакты
         </h2>
@@ -245,13 +243,16 @@
           Вы можете забрать товар сами, заехав в наш офис.
           Заодно, сможете проверить работоспособность покупки.
         </p>
-        <h4>
-          Интернет-магазин «Девайс»
-        </h4>
+        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
         <address class="contacts-address">
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
+        <h3 class="contacts-subtitle">Время работы</h3>
+        <ul class="contacts-schedule">
+          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
         <a href="mailto:someone@yoursite.com" class="more-link">
           Напишите нам
         </a>
@@ -264,9 +265,9 @@
           Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
-        <form action="">
+        <form action="https://echo.htmlacademy.ru/">
           <div class="subscription-container">
-            <input type="text" placeholder="Ваш e-mail" name="mail" required>
+            <input type="email" placeholder="Ваш e-mail" name="mail" required>
             <input type="submit" value="Подписаться">
           </div>
           <p class="subscription-free-text">
@@ -282,7 +283,6 @@
         <address class="footer-contacts-address">
           <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
-        <hr>
       </section>
       <section class="footer-menu">
         <h2 class="visually-hidden">Меню в подвале</h2>
@@ -301,17 +301,17 @@
         </nav>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
