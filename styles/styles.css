@@ -1,0 +1,14 @@
+.main-product-category-link.virtual-reality {
+  display: block;
+}
+
+
+.main-product-category-link.virtual-reality:before {
+  content:url("img/virtual-reality-mask.svg");
+  width:
+}
+
+.product-card-image {
+  width: 360;
+  height: 380;
+}
